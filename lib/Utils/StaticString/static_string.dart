@@ -5,6 +5,7 @@ class AppString {
   static const String teacher = "Teacher";
   static const String name = "Name";
   static const String email = "Email";
+  static const String emailText = "JohnDoe@gmail.com";
   static const String password = "Password";
   static const String confirmPassword = "Confirm Password";
   static const String alreadyHaveAnAccount = "Already have an account? Log In";

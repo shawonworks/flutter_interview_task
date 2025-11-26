@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_interview_task/Utils/AppColors/app_colors.dart';
 import 'package:flutter_interview_task/Utils/AppImg/app_img.dart';
 import 'package:flutter_interview_task/View/Widget/CustomRoleTabBar/custom_role_tab_bar.dart';
+import 'package:flutter_interview_task/View/Widget/CustomText/custom_text.dart';
+import 'package:flutter_interview_task/View/Widget/CustomTextFeild/custom_text_feild.dart';
 
 import '../../../Utils/StaticString/static_string.dart';
 
@@ -28,7 +30,24 @@ class _LogInPageState extends State<LogInPage> {
             ),
           ),
           const SizedBox(height: 6),
-          CustomRoleTab(),
+          const CustomRoleTab(),
+          const SizedBox(height: 6),
+          Padding(
+            padding: const EdgeInsets.all(20),
+            child: Column(
+              children: [
+                CustomText(text: AppString.email),
+                const SizedBox(height: 6),
+                CustomTextField(hintText: AppString.emailText),
+                const SizedBox(height: 12),
+                CustomText(text: AppString.password),
+                const SizedBox(height: 6),
+                CustomTextField(hintText: "", obscureText: true,)
+                
+              ],
+            ),
+          )
+
 
         ],
       ),
