@@ -3,11 +3,13 @@ import 'package:flutter/material.dart';
 class CustomTextField extends StatefulWidget {
   final String hintText;
   final bool obscureText;
+  final TextInputType keyboardType;
 
   const CustomTextField({
     super.key,
     required this.hintText,
     this.obscureText = false,
+    this.keyboardType = TextInputType.text,
   });
 
   @override
@@ -39,7 +41,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
         ],
       ),
       child: TextField(
-        keyboardType: TextInputType.phone,
+        keyboardType: widget.keyboardType,
         obscureText: _obscureText,
         decoration: InputDecoration(
           hintText: widget.hintText,

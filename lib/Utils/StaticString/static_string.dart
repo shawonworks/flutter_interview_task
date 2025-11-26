@@ -1,6 +1,7 @@
 class AppString {
   static const String learnova = "Learnova";
   static const String createAccount = "Create Account";
+  static const String createAnAccount = "Create an Account";
   static const String student = "Student";
   static const String teacher = "Teacher";
   static const String name = "Name";
@@ -12,7 +13,7 @@ class AppString {
   static const String logIn = "Log In";
   static const String forgotPassword = "Forgot Password?";
   static const String loginWithGoogle = "Login with Google";
-  static const String newToLearnova = "New to Learnova? Create an Account";
+  static const String newToLearnova = "New to Learnova?";
 
   static const String personalizingCourse = "Personalizing course according to your profile";
   static const String currentSchool = "Current School";
