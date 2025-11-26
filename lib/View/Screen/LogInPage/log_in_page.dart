@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_interview_task/Utils/AppColors/app_colors.dart';
 import 'package:flutter_interview_task/Utils/AppImg/app_img.dart';
+import 'package:flutter_interview_task/View/Widget/CustomRoleTabBar/custom_role_tab_bar.dart';
 
 import '../../../Utils/StaticString/static_string.dart';
 
@@ -27,6 +28,8 @@ class _LogInPageState extends State<LogInPage> {
             ),
           ),
           const SizedBox(height: 6),
+          CustomRoleTab(),
+
         ],
       ),
     );

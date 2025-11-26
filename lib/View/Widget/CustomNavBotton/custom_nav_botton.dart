@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_interview_task/Utils/StaticString/static_string.dart';
 
 class CustomButtonTwo extends StatefulWidget {
   const CustomButtonTwo({super.key});
@@ -36,7 +37,7 @@ class _CustomButtonTwoState extends State<CustomButtonTwo> {
                 border: Border.all(color: Colors.black12),
               ),
               child: const Text(
-                "User",
+                AppString.getBackToIt,
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
@@ -63,7 +64,7 @@ class _CustomButtonTwoState extends State<CustomButtonTwo> {
                 border: Border.all(color: Colors.black12),
               ),
               child: const Text(
-                "Rider",
+                AppString.courseDetails,
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,

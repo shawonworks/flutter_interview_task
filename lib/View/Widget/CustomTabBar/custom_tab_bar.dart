@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_interview_task/Utils/StaticString/static_string.dart';
 
 class CustomTabBar extends StatefulWidget {
   const CustomTabBar({super.key});
@@ -16,11 +17,11 @@ class _CustomTabBarState extends State<CustomTabBar> {
         scrollDirection: Axis.horizontal,
         padding: const EdgeInsets.symmetric(horizontal: 16),
         children: [
-          buildCategory("All", isSelected: true),
-          buildCategory("中文"),
-          buildCategory("English"),
-          buildCategory("Maths"),
-          buildCategory("Chemistry"),
+          buildCategory(AppString.all, isSelected: true),
+          buildCategory(AppString.chinese),
+          buildCategory(AppString.english),
+          buildCategory(AppString.maths),
+          buildCategory(AppString.chemistry),
         ],
       ),
     );
