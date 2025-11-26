@@ -1,0 +1,85 @@
+class AppString {
+  static const String learnova = "Learnova";
+  static const String createAccount = "Create Account";
+  static const String student = "Student";
+  static const String teacher = "Teacher";
+  static const String name = "Name";
+  static const String email = "Email";
+  static const String password = "Password";
+  static const String confirmPassword = "Confirm Password";
+  static const String alreadyHaveAnAccount = "Already have an account? Log In";
+  static const String logIn = "Log In";
+  static const String forgotPassword = "Forgot Password?";
+  static const String loginWithGoogle = "Login with Google";
+  static const String newToLearnova = "New to Learnova? Create an Account";
+
+  static const String personalizingCourse = "Personalizing course according to your profile";
+  static const String currentSchool = "Current School";
+  static const String diocesanBoysSchool = "Diocesan Boys' School";
+  static const String electiveSubject = "Elective Subject";
+  static const String currentGrade = "Current Grade";
+  static const String primary5 = "Primary 5";
+  static const String primary1 = "Primary 1";
+  static const String primary2 = "Primary 2";
+  static const String primary3 = "Primary 3";
+  static const String primary4 = "Primary 4";
+  static const String primary6 = "Primary 6";
+  static const String form1 = "Form 1";
+  static const String form2 = "Form 2";
+  static const String howDidYouHearAboutUs = "How Did You Hear About Us ?";
+  static const String friends = "Friends";
+  static const String instagram = "Instagram";
+  static const String medium = "Medium";
+  static const String threads = "Threads";
+  static const String school = "School";
+  static const String teacherSource = "Teacher";
+  static const String others = "Others";
+  static const String getStarted = "Get Started";
+
+  static const String back = "Back";
+  static const String search = "Search";
+  static const String trigonometry = "Trigonometry";
+  static const String vocabulary = "Vocabulary";
+  static const String grammar = "Grammar";
+  static const String geography = "Geography";
+  static const String xxx = "XXX";
+
+  static const String jessicaRoy = "Jessica Roy";
+  static const String joinedSinceJun2024 = "Joined Since - Jun 2024";
+  static const String inProgress = "In Progress";
+  static const String completed = "Completed";
+  static const String following = "Following";
+  static const String myCourses = "My Courses";
+  static const String englishTenses = "English Tenses";
+  static const String levelIntermediate = "Level - Intermediate";
+  static const String denisaOzel = "Denisa Ozel";
+  static const String getBackToIt = "Get Back To It";
+  static const String courseDetails = "Course Details";
+  static const String minsAgo32 = "32 mins ago";
+
+  static const String letsTestYourUnderstanding = "Let's Test Your Understanding!";
+  static const String myDogIsLittle = "Q. My dog is a little _, especially when around other dogs.";
+  static const String scared = "Scared";
+  static const String frightening = "Frightening";
+  static const String timid = "Timid";
+  static const String concerned = "Concerned";
+  static const String next = "Next";
+
+  static const String learnThroughWatchingReels = "Learn Through Watching Reels";
+  static const String trending = "Trending";
+  static const String newTab = "New";
+  static const String followingTab = "Following";
+  static const String all = "All";
+  static const String chinese = "中文";
+  static const String english = "English";
+  static const String maths = "Maths";
+  static const String chemistry = "Chemistry";
+  static const String vocabulary101 = "Vocabulary 101";
+  static const String englishListening = "English Listening";
+  static const String trigonometryBasic = "Trigonometry Basic";
+  static const String geometryAdvance = "Geometry Advance";
+  static const String startLearningVocabularyToday = "Start Learning Vocabulary Today!";
+  static const String soWhatIsTheNecessary = "So what is the necessary to learn vocabulary in today world. Everyone is learn....";
+  static const String readMore = "read more";
+  static const String follow = "Follow";
+}
