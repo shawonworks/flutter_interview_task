@@ -6,6 +6,7 @@ import 'package:flutter_interview_task/View/Widget/CustomBotton/custom_botton.da
 import 'package:flutter_interview_task/View/Widget/CustomRoleTabBar/custom_role_tab_bar.dart';
 import 'package:flutter_interview_task/View/Widget/CustomText/custom_text.dart';
 import 'package:flutter_interview_task/View/Widget/CustomTextFeild/custom_text_feild.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
@@ -28,32 +29,32 @@ class _LogInPageState extends State<LogInPage> {
         child: Column(
           children: [
             Image.asset(AppImage.card),
-            const SizedBox(height: 6),
-            const Center(
+            SizedBox(height: 6.h),
+             Center(
               child: Text(
                 AppString.logIn,
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.w700),
+                style: TextStyle(fontSize: 24.h.w, fontWeight: FontWeight.w700),
               ),
             ),
-            const SizedBox(height: 6),
+             SizedBox(height: 6.h),
             const CustomRoleTab(),
-            const SizedBox(height: 6),
+             SizedBox(height: 6.h),
             Padding(
-              padding: const EdgeInsets.all(20),
+              padding: EdgeInsets.all(20.h.w),
               child: Column(
                 children: [
                   CustomText(text: AppString.email),
-                  const SizedBox(height: 6),
+                   SizedBox(height: 6.h),
                   CustomTextField(hintText: AppString.emailText, keyboardType: TextInputType.emailAddress,),
-                  const SizedBox(height: 12),
+                   SizedBox(height: 12.h),
                   CustomText(text: AppString.password, ),
-                  const SizedBox(height: 6),
+                  SizedBox(height: 6.h),
                   CustomTextField(hintText: "", obscureText: true, keyboardType: TextInputType.phone,),
-                  const SizedBox(height: 12),
+                  SizedBox(height: 12.h),
                   GestureDetector(
+                    //=-=-=-=-=-==-=-=Create Account NNavigate=-=--=-=-==-=-=-=-=-=-//
                     onTap: (){
                       Get.toNamed(AppRoute.createAccount);
-
                     },
                     child: Align(
                       alignment: Alignment.bottomRight,
@@ -63,9 +64,9 @@ class _LogInPageState extends State<LogInPage> {
                       ),
                     ),
                   ),
-                  const SizedBox(height: 16),
+                  SizedBox(height: 16.h),
                   CustomButton(text: AppString.logIn, color: AppColor.blue900),
-                  const SizedBox(height: 16),
+                  SizedBox(height: 16.h),
                   CustomButton(
                     text: AppString.loginWithGoogle,
                     icon: Icons.g_mobiledata,
@@ -73,12 +74,12 @@ class _LogInPageState extends State<LogInPage> {
                     textColor: AppColor.black600,
                     borderColor: Colors.blueGrey,
                   ),
-                  const SizedBox(height: 16),
+                  SizedBox(height: 16.h),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(AppString.newToLearnova),
-                      const SizedBox(width: 6),
+                      SizedBox(width: 6.w),
                       GestureDetector(
                         onTap: (){
                           Get.toNamed(AppRoute.createAccount);
@@ -91,7 +92,7 @@ class _LogInPageState extends State<LogInPage> {
                       ),
                     ],
                   ),
-                  const SizedBox(height: 50),
+                  SizedBox(height: 50.h),
                 ],
               ),
             ),

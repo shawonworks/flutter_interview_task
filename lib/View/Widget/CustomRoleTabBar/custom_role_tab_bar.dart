@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_interview_task/Utils/StaticString/static_string.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomRoleTab extends StatefulWidget {
   const CustomRoleTab({super.key});
@@ -14,7 +15,7 @@ class _CustomRoleTabState extends State<CustomRoleTab> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 20, right: 20),
+      padding: EdgeInsets.only(left: 20.h, right: 20.h),
       child: Row(
         children: [
           Expanded(
@@ -33,9 +34,9 @@ class _CustomRoleTabState extends State<CustomRoleTab> {
                       color: isStudent ? const Color(0xFF0A6BC8) : Colors.black54,
                     ),
                   ),
-                  const SizedBox(height: 8),
+                  SizedBox(height: 8.h),
                   Container(
-                    height: 3,
+                    height: 3.h,
                     decoration: BoxDecoration(
                       color: isStudent ? const Color(0xFF0A6BC8) : Colors.transparent,
                       borderRadius: BorderRadius.circular(2),
@@ -61,9 +62,9 @@ class _CustomRoleTabState extends State<CustomRoleTab> {
                       color: !isStudent ? const Color(0xFF0A6BC8) : Colors.black54,
                     ),
                   ),
-                  const SizedBox(height: 8),
+                  SizedBox(height: 8.h),
                   Container(
-                    height: 3,
+                    height: 3.h,
                     decoration: BoxDecoration(
                       color: !isStudent ? const Color(0xFF0A6BC8) : Colors.transparent,
                       borderRadius: BorderRadius.circular(2),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_interview_task/Utils/StaticString/static_string.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomButtonTwo extends StatefulWidget {
   const CustomButtonTwo({super.key});
@@ -29,17 +30,17 @@ class _CustomButtonTwoState extends State<CustomButtonTwo> {
             },
             child: Container(
               alignment: Alignment.center,
-              height: 38,
-              width: 150,
+              height: 38.h,
+              width: 150.w,
               decoration: BoxDecoration(
                 color: isLoginTapped ? Colors.green : Colors.white,
-                borderRadius: BorderRadius.circular(16),
+                borderRadius: BorderRadius.circular(16.h),
                 border: Border.all(color: Colors.black12),
               ),
-              child: const Text(
+              child: Text(
                 AppString.getBackToIt,
                 style: TextStyle(
-                  fontSize: 20,
+                  fontSize: 20.h,
                   fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),

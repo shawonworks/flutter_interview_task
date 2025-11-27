@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_interview_task/Utils/StaticString/static_string.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomTabBar extends StatefulWidget {
   const CustomTabBar({super.key});
@@ -12,7 +13,8 @@ class _CustomTabBarState extends State<CustomTabBar> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 40,
+      height: 40.h,
+      width: double.maxFinite,
       child: ListView(
         scrollDirection: Axis.horizontal,
         padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -29,16 +31,16 @@ class _CustomTabBarState extends State<CustomTabBar> {
 
   Widget buildCategory(String text, {bool isSelected = false}) {
     return Container(
-      margin: const EdgeInsets.only(right: 10),
-      padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 10),
+      margin:  EdgeInsets.only(right: 15.h),
+      padding:  EdgeInsets.symmetric(horizontal: 18.w, vertical: 10.h),
       decoration: BoxDecoration(
         color: isSelected ? Colors.blue.shade50 : Colors.white,
-        borderRadius: BorderRadius.circular(14),
+        borderRadius: BorderRadius.circular(14.w.h),
         boxShadow: [
           if (!isSelected)
             BoxShadow(
               color: Colors.black.withOpacity(0.07),
-              blurRadius: 6,
+              blurRadius: 6.h,
               offset: const Offset(0, 3),
             ),
         ],

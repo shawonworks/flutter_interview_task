@@ -1,11 +1,13 @@
 // lib/dialogs/profile_setup_dialog.dart
 
 import 'package:flutter/material.dart';
+import 'package:flutter_interview_task/Core/AppRoute/app_route.dart';
 import 'package:flutter_interview_task/Utils/AppColors/app_colors.dart';
 import 'package:flutter_interview_task/Utils/StaticString/static_string.dart';
 import 'package:flutter_interview_task/View/Widget/CustomBotton/custom_botton.dart';
 import 'package:flutter_interview_task/View/Widget/CustomText/custom_text.dart';
 import 'package:flutter_interview_task/View/Widget/CustomTextFeild/custom_text_feild.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
 class ProfileSetupDialog {
@@ -27,38 +29,38 @@ class ProfileSetupScreen extends StatelessWidget {
     return Material(
       color: Colors.transparent,
       child: Container(
-        margin: const EdgeInsets.all(20),
+        margin: EdgeInsets.all(20.h.w),
         decoration: BoxDecoration(
           color: Colors.white,
-          borderRadius: BorderRadius.circular(28),
+          borderRadius: BorderRadius.circular(28.h.w),
         ),
         child: SingleChildScrollView(
           child: Padding(
-            padding: const EdgeInsets.all(12.0),
+            padding: EdgeInsets.all(12.0.h.w),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                const SizedBox(height: 30),
-                const Text(
+                SizedBox(height: 30.h),
+                Text(
                   AppString.personalizingCourse,
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
-                    height: 1.3,
+                    height: 1.3.h,
                   ),
                 ),
-                const SizedBox(height: 30),
+                SizedBox(height: 30.h),
                 CustomText(text: AppString.currentSchool),
-                const SizedBox(height: 6),
+                SizedBox(height: 6.h),
                 CustomTextField(hintText: AppString.diocesanBoysSchool),
-                const SizedBox(height: 10),
+                SizedBox(height: 10.h),
                 CustomText(text: AppString.electiveSubject),
-                const SizedBox(height: 6),
+                SizedBox(height: 6.h),
                 CustomTextField(hintText: AppString.diocesanBoysSchool),
-                const SizedBox(height: 10),
+                 SizedBox(height: 10.h),
                 CustomText(text: AppString.currentGrade),
-                const SizedBox(height: 6),
+                SizedBox(height: 6.h),
                 CustomTextField(
                   hintText: AppString.primary5,
                   trailingIcon: Icons.keyboard_arrow_down_sharp,
@@ -70,9 +72,9 @@ class ProfileSetupScreen extends StatelessWidget {
                     AppString.primary5,
                   ],
                 ),
-                const SizedBox(height: 10),
+                 SizedBox(height: 10.h),
                 CustomText(text: AppString.howDidYouHearAboutUs),
-                const SizedBox(height: 6),
+                SizedBox(height: 6.h),
                 CustomTextField(
                   hintText: AppString.friends,
                   trailingIcon: Icons.keyboard_arrow_down_sharp,
@@ -86,9 +88,12 @@ class ProfileSetupScreen extends StatelessWidget {
                     AppString.others,
                   ],
                 ),
-                const SizedBox(height: 210),
-                CustomButton(onTap: ,text: AppString.getStarted, color: AppColor.blue900),
-                const SizedBox(height: 20),
+                 SizedBox(height: 140.h),
+                CustomButton(onTap: (){
+                  //=-=-==-=-=-===-=-Home Screen Navigate=-=--=-==-=-=-==-==-//
+                  Get.toNamed(AppRoute.homeScreen);
+                },text: AppString.getStarted, color: AppColor.blue900),
+                 SizedBox(height: 20.h),
               ],
             ),
           ),

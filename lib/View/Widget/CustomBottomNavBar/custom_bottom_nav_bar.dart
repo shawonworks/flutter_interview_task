@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomBoomNavBar extends StatefulWidget {
   final int currentIndex;
@@ -54,20 +55,20 @@ class _CustomBoomNavBarState extends State<CustomBoomNavBar> {
     return GestureDetector(
       onTap: () => widget.onTap(index),
       child: Container(
-        padding: const EdgeInsets.symmetric(vertical: 12),
+        padding:  EdgeInsets.symmetric(vertical: 12.w),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
             Icon(
               icon,
-              size: 28,
+              size: 28.h,
               color: isSelected ? Colors.blue : Colors.grey.shade400,
             ),
-            const SizedBox(height: 6),
+             SizedBox(height: 6.h),
             if (isSelected)
               Container(
-                height: 5,
-                width: 5,
+                height: 5.h,
+                width: 5.w,
                 decoration: const BoxDecoration(
                   color: Colors.blue,
                   shape: BoxShape.circle,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_interview_task/Core/AppRoute/app_route.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
@@ -29,45 +30,45 @@ class _CreateAccountState extends State<CreateAccount> {
         child: Column(
           children: [
             Image.asset(AppImage.card),
-            const SizedBox(height: 6),
-            const Center(
+             SizedBox(height: 6.h),
+             Center(
               child: Text(
                 AppString.createAccount,
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.w700),
+                style: TextStyle(fontSize: 24.h.w, fontWeight: FontWeight.w700),
               ),
             ),
-            const SizedBox(height: 6),
+             SizedBox(height: 6.h),
             const CustomRoleTab(),
-            const SizedBox(height: 6),
+             SizedBox(height: 6.h),
             Padding(
               padding: const EdgeInsets.all(20),
               child: Column(
                 children: [
                   CustomText(text: AppString.name),
-                  const SizedBox(height: 6),
+                  SizedBox(height: 6.h),
                   CustomTextField(hintText: AppString.name, keyboardType: TextInputType.emailAddress,),
-                  const SizedBox(height: 12),
+                  SizedBox(height: 12.h),
                   CustomText(text: AppString.email, ),
-                  const SizedBox(height: 6),
+                  SizedBox(height: 6.h),
                   CustomTextField(hintText: AppString.emailText, keyboardType: TextInputType.emailAddress,),
-                  const SizedBox(height: 12),
+                  SizedBox(height: 12.h),
                   CustomText(text: AppString.password, ),
-                  const SizedBox(height: 6),
+                  SizedBox(height: 6.h),
                   CustomTextField(hintText: "", obscureText: true, keyboardType: TextInputType.phone,),
-                  const SizedBox(height: 12),
+                  SizedBox(height: 12.h),
                   CustomText(text: AppString.password, ),
-                  const SizedBox(height: 6),
+                  SizedBox(height: 6.h),
                   CustomTextField(hintText: "", obscureText: true, keyboardType: TextInputType.phone,),
-                  const SizedBox(height: 12),
+                  SizedBox(height: 12.h),
                   CustomButton(text: AppString.createAccount, color: AppColor.blue900, onTap: (){
                     ProfileSetupDialog.show();
                   },),
-                  const SizedBox(height: 25),
+                  SizedBox(height: 25.h),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(AppString.newToLearnova),
-                      const SizedBox(width: 6),
+                       SizedBox(width: 6.w),
                       GestureDetector(
                         onTap: (){
                           Get.toNamed(AppRoute.loginScreen);
@@ -79,7 +80,7 @@ class _CreateAccountState extends State<CreateAccount> {
                       ),
                     ],
                   ),
-                  const SizedBox(height: 50),
+                  SizedBox(height: 50.h),
                 ],
               ),
             ),

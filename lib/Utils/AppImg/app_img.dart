@@ -11,5 +11,6 @@ class AppImage {
   static const String boxImgFour = "$basePath/box_img4.png";
   static const String screenImg = "$basePath/screen_img.png";
   static const String profileImg = "$basePath/profile_img.png";
+  static const String profileImgTwo = "$basePath/profile_img2.png";
 
 }
