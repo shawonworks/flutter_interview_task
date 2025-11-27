@@ -66,6 +66,9 @@ class AppString {
   static const String timid = "Timid";
   static const String concerned = "Concerned";
   static const String next = "Next";
+  static const String wellDone = "Well done! Here is the Explanation";
+  static const String explanation = "Explanation";
+  static const String continueText = "Continue";
 
   static const String learnThroughWatchingReels = "Learn Through Watching Reels";
   static const String trending = "Trending";
@@ -73,6 +76,9 @@ class AppString {
   static const String followingTab = "Following";
   static const String all = "All";
   static const String chinese = "中文";
+  static const String chineseText = "Timid 的意思是缺乏勇氣或信心；\n 容易受到驚嚇，這適合描述一\n 隻狗在其他狗的周圍\n表現出的從屬或緊張的行為。";
+  static const String chineseTextTwo = "Scary 的意思是缺乏勇氣或信心；\n 容易受到驚嚇，這適合描述一\n 隻狗在其他狗的周圍\n表現出的從屬或緊張的行為。";
+  static const String chineseTextThree = "Concerned 的意思是缺乏勇氣或信心；\n 容易受到驚嚇，這適合描述一\n 隻狗在其他狗的周圍\n表現出的從屬或緊張的行為。";
   static const String english = "English";
   static const String maths = "Maths";
   static const String chemistry = "Chemistry";

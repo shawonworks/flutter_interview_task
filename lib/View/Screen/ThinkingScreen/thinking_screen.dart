@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_interview_task/Core/AppRoute/app_route.dart';
 import 'package:flutter_interview_task/Utils/AppColors/app_colors.dart';
 import 'package:flutter_interview_task/Utils/AppImg/app_img.dart';
 import 'package:flutter_interview_task/Utils/StaticString/static_string.dart';
 import 'package:flutter_interview_task/View/Widget/CustomBottomNavBar/custom_bottom_nav_bar.dart';
 import 'package:flutter_interview_task/View/Widget/CustomBotton/custom_botton.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
 class ThinkingScreen extends StatefulWidget {
@@ -116,7 +118,7 @@ class _ThinkingScreenState extends State<ThinkingScreen> {
             Spacer(),
             SizedBox(height: 10.h,),
             CustomButton(text: AppString.next, color: AppColor.blue900,onTap: (){
-              Get.
+              Get.toNamed(AppRoute.thinkingScreenTwo);
             },)
           ],
         ),

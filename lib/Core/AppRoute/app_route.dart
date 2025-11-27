@@ -2,6 +2,8 @@ import 'package:flutter_interview_task/View/Screen/AllScreen/all_screen.dart';
 import 'package:flutter_interview_task/View/Screen/CreatAccount/create_account.dart';
 import 'package:flutter_interview_task/View/Screen/HomeScreen/home_screen.dart';
 import 'package:flutter_interview_task/View/Screen/SearchScreen/search_screen.dart';
+import 'package:flutter_interview_task/View/Screen/ThinkingScreen/ThinkingScreenTwo/thinking_screen_two.dart';
+import 'package:flutter_interview_task/View/Screen/ThinkingScreen/thinking_screen.dart';
 import 'package:flutter_interview_task/View/Screen/VedioPlayScreen/reel_details_screen.dart';
 import 'package:get/get.dart';
 
@@ -14,6 +16,8 @@ class AppRoute {
   static const String homeScreen = "/homeScreen";
   static const String searchScreen = "/searchScreen";
   static const String reelDetailsScreen = "/reelDetailsScreen";
+  static const String thinkingScreen = "/thinkingScreen";
+  static const String thinkingScreenTwo = "/thinkingScreenTwo";
 
   static List<GetPage> routes = [
     GetPage(name: loginScreen, page: () => LogInPage()),
@@ -22,5 +26,7 @@ class AppRoute {
     GetPage(name: homeScreen, page: () => HomeScreen()),
     GetPage(name: searchScreen, page: () => SearchScreen()),
     GetPage(name: reelDetailsScreen, page: () => ReelDetailScreen()),
+    GetPage(name: thinkingScreen, page: () => ThinkingScreen()),
+    GetPage(name: thinkingScreenTwo, page: () => ThinkingScreenTwo()),
   ];
 }
