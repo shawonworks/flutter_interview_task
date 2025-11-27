@@ -40,7 +40,7 @@ class _CustomBoomNavBarState extends State<CustomBoomNavBar> {
               _buildNavItem(Icons.home_outlined, 0),
               _buildNavItem(Icons.play_circle_outline, 1),
               _buildNavItem(Icons.lightbulb_outline, 2),
-              _buildNavItem(Icons.menu_book_outlined, 3),
+              _buildNavItem(Icons.menu_book_outlined,3),
               _buildNavItem(Icons.person_outline, 4),
             ],
           ),

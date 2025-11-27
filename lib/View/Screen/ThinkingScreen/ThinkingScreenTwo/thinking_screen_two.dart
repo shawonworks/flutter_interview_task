@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_interview_task/Core/AppRoute/app_route.dart';
 import 'package:flutter_interview_task/View/Widget/CustomBotton/custom_botton.dart';
 import 'package:flutter_interview_task/View/Widget/CustomTextFeild/custom_text_feild.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 
 import '../../../../Utils/AppColors/app_colors.dart';
 import '../../../../Utils/StaticString/static_string.dart';
@@ -115,7 +118,9 @@ class _ThinkingScreenTwoState extends State<ThinkingScreenTwo> {
               ),
             ),
             SizedBox(height: 20,),
-            CustomButton(text: AppString.continueText, color: AppColor.blue900,)
+            CustomButton(text: AppString.continueText, color: AppColor.blue900,onTap: (){
+              Get.toNamed(AppRoute.profileScreen);
+            },)
           ],
         ),
       ),

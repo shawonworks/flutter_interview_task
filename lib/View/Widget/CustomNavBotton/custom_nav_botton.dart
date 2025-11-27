@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_interview_task/Utils/AppColors/app_colors.dart';
 import 'package:flutter_interview_task/Utils/StaticString/static_string.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -30,17 +31,17 @@ class _CustomButtonTwoState extends State<CustomButtonTwo> {
             },
             child: Container(
               alignment: Alignment.center,
-              height: 38.h,
-              width: 150.w,
+              height: 35.h,
+              width: 120.w,
               decoration: BoxDecoration(
-                color: isLoginTapped ? Colors.green : Colors.white,
+                color: isLoginTapped ? AppColor.blue700 : AppColor.white900,
                 borderRadius: BorderRadius.circular(16.h),
                 border: Border.all(color: Colors.black12),
               ),
               child: Text(
                 AppString.getBackToIt,
                 style: TextStyle(
-                  fontSize: 20.h,
+                  fontSize: 15.h,
                   fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
@@ -57,17 +58,17 @@ class _CustomButtonTwoState extends State<CustomButtonTwo> {
             },
             child: Container(
               alignment: Alignment.center,
-              height: 38,
-              width: 150,
+              height: 38.h,
+              width: 120.w,
               decoration: BoxDecoration(
-                color: isLoginTapped ? Colors.white : Colors.green,
+                color: isLoginTapped ? AppColor.white900 : AppColor.blue700,
                 borderRadius: BorderRadius.circular(16),
                 border: Border.all(color: Colors.black12),
               ),
-              child: const Text(
+              child: Text(
                 AppString.courseDetails,
                 style: TextStyle(
-                  fontSize: 20,
+                  fontSize: 15.h,
                   fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
