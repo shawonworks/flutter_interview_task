@@ -20,6 +20,7 @@ class _CustomTextState extends State<CustomText> {
       child: Text(
         widget.text,
         style: const TextStyle(
+          color: Colors.grey,
           fontSize: 14,
           fontWeight: FontWeight.w600,
         ),

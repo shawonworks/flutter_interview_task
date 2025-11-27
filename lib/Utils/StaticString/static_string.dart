@@ -15,7 +15,7 @@ class AppString {
   static const String loginWithGoogle = "Login with Google";
   static const String newToLearnova = "New to Learnova?";
 
-  static const String personalizingCourse = "Personalizing course according to your profile";
+  static const String personalizingCourse = "Personalizing course \n according to your profile";
   static const String currentSchool = "Current School";
   static const String diocesanBoysSchool = "Diocesan Boys' School";
   static const String electiveSubject = "Elective Subject";

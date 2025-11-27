@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_interview_task/Core/AppRoute/app_route.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 
 import '../../../Utils/AppColors/app_colors.dart';
 import '../../../Utils/AppImg/app_img.dart';
 import '../../../Utils/StaticString/static_string.dart';
 import '../../Widget/CustomBotton/custom_botton.dart';
 import '../../Widget/CustomRoleTabBar/custom_role_tab_bar.dart';
+import '../../Widget/CustomShowDialog/custom_show_dialog.dart';
 import '../../Widget/CustomText/custom_text.dart';
 import '../../Widget/CustomTextFeild/custom_text_feild.dart';
 
@@ -55,16 +59,23 @@ class _CreateAccountState extends State<CreateAccount> {
                   const SizedBox(height: 6),
                   CustomTextField(hintText: "", obscureText: true, keyboardType: TextInputType.phone,),
                   const SizedBox(height: 12),
-                  CustomButton(text: AppString.createAccount, color: AppColor.blue900),
+                  CustomButton(text: AppString.createAccount, color: AppColor.blue900, onTap: (){
+                    ProfileSetupDialog.show();
+                  },),
                   const SizedBox(height: 25),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(AppString.newToLearnova),
                       const SizedBox(width: 6),
-                      Text(
-                        AppString.logIn,
-                        style: TextStyle(color: AppColor.blue700),
+                      GestureDetector(
+                        onTap: (){
+                          Get.toNamed(AppRoute.loginScreen);
+                        },
+                        child: Text(
+                          AppString.logIn,
+                          style: TextStyle(color: AppColor.blue700),
+                        ),
                       ),
                     ],
                   ),
