@@ -93,12 +93,12 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
 
       //=-=--=-=-==-=-=-=-Custom Bottom Navigation Bar=-=-=-=-=-=-=-=-=-=-=-//
-      bottomNavigationBar: CustomBoomNavBar(
-        currentIndex: 0,
-        onTap: (index) {
-          print("Bottom Nav Tapped: $index");
-        },
-      ),
+      // bottomNavigationBar: CustomBoomNavBar(
+      //   currentIndex: 0,
+      //   onTap: (index) {
+      //     print("Bottom Nav Tapped: $index");
+      //   },
+      // ),
     );
   }
 

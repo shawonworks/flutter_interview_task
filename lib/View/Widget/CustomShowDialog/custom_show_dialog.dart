@@ -91,7 +91,7 @@ class ProfileSetupScreen extends StatelessWidget {
                  SizedBox(height: 140.h),
                 CustomButton(onTap: (){
                   //=-=-==-=-=-===-=-Home Screen Navigate=-=--=-==-=-=-==-==-//
-                  Get.toNamed(AppRoute.homeScreen);
+                  Get.toNamed(AppRoute.allScreen);
                 },text: AppString.getStarted, color: AppColor.blue900),
                  SizedBox(height: 20.h),
               ],
