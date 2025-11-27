@@ -1,4 +1,5 @@
 import 'package:flutter_interview_task/View/Screen/AllScreen/all_screen.dart';
+import 'package:flutter_interview_task/View/Screen/BookScreen/book_screen.dart';
 import 'package:flutter_interview_task/View/Screen/CreatAccount/create_account.dart';
 import 'package:flutter_interview_task/View/Screen/HomeScreen/home_screen.dart';
 import 'package:flutter_interview_task/View/Screen/ProfileScreen/profile_screeen.dart';
@@ -19,6 +20,7 @@ class AppRoute {
   static const String reelDetailsScreen = "/reelDetailsScreen";
   static const String thinkingScreen = "/thinkingScreen";
   static const String thinkingScreenTwo = "/thinkingScreenTwo";
+  static const String bookScreen = "/bookScreen";
   static const String profileScreen = "/profileScreen";
 
   static List<GetPage> routes = [
@@ -30,6 +32,7 @@ class AppRoute {
     GetPage(name: reelDetailsScreen, page: () => ReelDetailScreen()),
     GetPage(name: thinkingScreen, page: () => ThinkingScreen()),
     GetPage(name: thinkingScreenTwo, page: () => ThinkingScreenTwo()),
+    GetPage(name: bookScreen, page: () => BookScreen()),
     GetPage(name: profileScreen, page: () => ProfileScreen()),
   ];
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_interview_task/Utils/AppColors/app_colors.dart';
+import 'package:flutter_interview_task/View/Screen/BookScreen/book_screen.dart';
 import 'package:flutter_interview_task/View/Screen/HomeScreen/home_screen.dart';
 import 'package:flutter_interview_task/View/Screen/ProfileScreen/profile_screeen.dart';
 import 'package:flutter_interview_task/View/Screen/ThinkingScreen/ThinkingScreenOne/thinking_screen.dart';
@@ -20,6 +21,7 @@ class _AllScreenState extends State<AllScreen> {
     HomeScreen(),
     ReelDetailScreen(),
     ThinkingScreen(),
+    BookScreen(),
     ProfileScreen(),
   ];
   @override
