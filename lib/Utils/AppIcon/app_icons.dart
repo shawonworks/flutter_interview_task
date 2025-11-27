@@ -14,5 +14,9 @@ class AppIcons {
   static const String youtubeIcon ="$basePath/youtubeIcon.svg";
   static const String likeIcon = "$basePath/likeIcon.svg";
   static const String home2 = "$basePath/home-2.svg";
+  static const String a = "$basePath/A.svg";
+  static const String b = "$basePath/B.svg";
+  static const String c = "$basePath/C.svg";
+  static const String d = "$basePath/D.svg";
 
 }
