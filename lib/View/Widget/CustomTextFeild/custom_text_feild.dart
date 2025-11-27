@@ -9,6 +9,8 @@ class CustomTextField extends StatefulWidget {
 
   final List<String>? dropdownItems;
 
+  final VoidCallback? onTap;
+
   const CustomTextField({
     super.key,
     required this.hintText,
@@ -17,6 +19,7 @@ class CustomTextField extends StatefulWidget {
     this.trailingIcon,
     this.onTrailingIconTap,
     this.dropdownItems,
+    this.onTap,
   });
 
   @override
@@ -86,6 +89,9 @@ class _CustomTextFieldState extends State<CustomTextField> {
         controller: _controller,
         keyboardType: widget.keyboardType,
         obscureText: _obscureText,
+
+        onTap: widget.onTap,
+
         decoration: InputDecoration(
           hintText: widget.hintText,
           contentPadding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),

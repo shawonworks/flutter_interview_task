@@ -65,7 +65,9 @@ class _LogInPageState extends State<LogInPage> {
                     ),
                   ),
                   SizedBox(height: 16.h),
-                  CustomButton(text: AppString.logIn, color: AppColor.blue900),
+                  CustomButton(text: AppString.logIn, color: AppColor.blue900,onTap: (){
+                    Get.toNamed(AppRoute.homeScreen);
+                  },),
                   SizedBox(height: 16.h),
                   CustomButton(
                     text: AppString.loginWithGoogle,

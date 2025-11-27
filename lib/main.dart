@@ -22,13 +22,13 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
             colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           ),
-          // defaultTransition: Transition.fadeIn,
-          // transitionDuration: Duration(milliseconds: 200),
+          defaultTransition: Transition.fadeIn,
+          transitionDuration: Duration(milliseconds: 200),
           navigatorKey: Get.key,
 
-          initialRoute: AppRoute.loginScreen,
+          initialRoute: AppRoute.splashScreen,
           getPages: AppRoute.routes,
-          // getPages: AppRoute.routes,
+          //getPages: AppRoute.routes,
         );
       },
     );

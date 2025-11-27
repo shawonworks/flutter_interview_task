@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_interview_task/Core/AppRoute/app_route.dart';
 import 'package:flutter_interview_task/Utils/AppColors/app_colors.dart';
 import 'package:flutter_interview_task/Utils/AppImg/app_img.dart';
 import 'package:flutter_interview_task/Utils/StaticString/static_string.dart';
 import 'package:flutter_interview_task/View/Widget/CustomBottomNavBar/custom_bottom_nav_bar.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 
 class ReelDetailScreen extends StatefulWidget {
   const ReelDetailScreen({super.key});
@@ -60,26 +63,36 @@ class _ReelDetailScreenState extends State<ReelDetailScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   //=-=-=-=-==-=Back Button=-=-=-=-=-=-=-=-=-=-=//
-                  IconButton(
-                    onPressed: () => Navigator.pop(context),
-                    icon: Icon(
-                      Icons.arrow_back_ios,
-                      color: Colors.white,
-                      size: 20.r,
+                  GestureDetector(
+                    onTap: (){
+                      Get.toNamed(AppRoute.homeScreen);
+                    },
+                    child: IconButton(
+                      onPressed: () => Navigator.pop(context),
+                      icon: Icon(
+                        Icons.arrow_back_ios,
+                        color: Colors.white,
+                        size: 20.r,
+                      ),
                     ),
                   ),
 
                   // =-=-=-=-=-=Search Icon=-=-=-=-=-=-//
-                  Container(
-                    padding: EdgeInsets.all(12.w),
-                    decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.2),
-                      borderRadius: BorderRadius.circular(25.r),
-                    ),
-                    child: Icon(
-                      Icons.search_outlined,
-                      color: Colors.white,
-                      size: 24.r,
+                  GestureDetector(
+                    onTap: (){
+                      Get.toNamed(AppRoute.searchScreen);
+                    },
+                    child: Container(
+                      padding: EdgeInsets.all(12.w),
+                      decoration: BoxDecoration(
+                        color: Colors.white.withOpacity(0.2),
+                        borderRadius: BorderRadius.circular(25.r),
+                      ),
+                      child: Icon(
+                        Icons.search_outlined,
+                        color: Colors.white,
+                        size: 24.r,
+                      ),
                     ),
                   ),
                 ],

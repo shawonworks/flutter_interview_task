@@ -146,7 +146,7 @@ class _ThinkingScreenState extends State<ThinkingScreen> {
     List<String> letters = ["A", "B", "C", "D"];
 
     bool isSelected = selectedOption == index;
-    bool isCorrect = index == 2; // C is correct answer
+    bool isCorrect = index == 2;
 
     return Padding(
       padding: EdgeInsets.only(bottom: 12.h),
