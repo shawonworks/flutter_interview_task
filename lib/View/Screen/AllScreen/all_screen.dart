@@ -18,6 +18,7 @@ class _AllScreenState extends State<AllScreen> {
   int currentIndex = 0;
 
   final List<Widget> allScreen = [
+    /////////this is a all screen tab screen//////
     HomeScreen(),
     ReelDetailScreen(),
     ThinkingScreen(),
